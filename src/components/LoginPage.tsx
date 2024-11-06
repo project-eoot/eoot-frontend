@@ -1,17 +1,18 @@
 // src/components/LoginPage.tsx
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { login } from '../store/authSlice';
+import React, { useState } from "react"
+import { useDispatch } from "react-redux"
+
+import { login } from "../store/authSlice"
 
 const LoginPage: React.FC = () => {
-  const [token, setToken] = useState('');
-  const dispatch = useDispatch();
+  const [token, setToken] = useState("")
+  const dispatch = useDispatch()
 
   const handleLogin = () => {
     if (token) {
-      dispatch(login(token));
+      dispatch(login(token))
     }
-  };
+  }
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
@@ -25,12 +26,11 @@ const LoginPage: React.FC = () => {
       />
       <button
         onClick={handleLogin}
-        className="bg-blue-500 text-white px-4 py-2 rounded"
-      >
+        className="bg-blue-500 text-white px-4 py-2 rounded">
         Login
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default LoginPage;
+export default LoginPage

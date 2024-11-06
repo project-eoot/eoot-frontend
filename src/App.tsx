@@ -1,12 +1,13 @@
 // src/App.tsx
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { RootState } from './store';
-import LoginPage from './components/LoginPage';
+import React from "react";
+import { useSelector } from "react-redux";
+
+import LoginPage from "./components/LoginPage";
+import { RootState } from "./store";
 
 const App: React.FC = () => {
   const isAuthenticated = useSelector(
-    (state: RootState) => state.auth.isAuthenticated
+    (state: RootState) => state.auth.isAuthenticated,
   );
 
   return isAuthenticated ? (
