@@ -8,5 +8,6 @@ export { default as PostWritePage } from "@pages/Post/PostWritePage";
 export { default as LocationPage } from "@pages/User/LocationPage";
 export { default as LoginPage } from "@pages/User/LoginPage";
 export { default as MyPage } from "@pages/User/MyPage";
+export { default as ProfilePage } from "@pages/User/ProfilePage";
 export { default as NotificationPage } from "@pages/User/NotificationPage";
 export { default as RegistPage } from "@pages/User/RegistPage";
