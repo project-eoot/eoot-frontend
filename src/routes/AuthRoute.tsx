@@ -3,15 +3,15 @@ import { Navigate } from "react-router-dom";
 
 import { RootState } from "@/store";
 
-interface IProtectedRoutProps {
+interface IAuthRouteProps {
   children: React.ReactElement;
 }
 
-const ProtectedRoute: React.FC<IProtectedRoutProps> = ({ children }) => {
+const AuthRoute: React.FC<IAuthRouteProps> = ({ children }) => {
   const isAuthenticated = useSelector(
     (state: RootState) => state.auth.isAuthenticated,
   );
   return isAuthenticated ? children : <Navigate to="/login" />;
 };
 
-export default ProtectedRoute;
+export default AuthRoute;
