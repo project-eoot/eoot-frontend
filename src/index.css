@@ -2,8 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@layer base {
+  html {
+    color:saddlebrown !important;
+    font-family: 'Nanum Gothic', system-ui, sans-serif;
+    border:10px solid red;
+  }
+  div {
+    font-family: "Nanum Gothic", system-ui, sans-serif;
+   
+    border:10px solid blue;
+  }
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
   font-weight: 400;
 

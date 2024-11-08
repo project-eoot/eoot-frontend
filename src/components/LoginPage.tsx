@@ -15,8 +15,16 @@ const LoginPage: React.FC = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-2xl font-bold mb-4">Login</h1>
+    <div className="flex flex-col items-center justify-center h-screen">
+      텍 스트 텍스트 텍스트 텍스트 텍텥ㄱ테게렐게텍스트트스
+      <div className="px-14 bg-primary">primary #E85F84</div>
+      <div className="px-14 bg-secondary">secondary #FF779D</div>
+      <div className="px-14 bg-accent">accent #7242E0</div>
+      <div className="px-14 bg-text-primary">text-primary #0E0F24</div>
+      <div className="px-14 text-secondary">text-secondary #98A2B3</div>
+      <div className="px-14 bg-light">light #FEF7FF</div>
+      
+      <h1 className="text-2xl font-bold mb-4 text-light">Login</h1>
       <input
         type="text"
         placeholder="Enter Token"
