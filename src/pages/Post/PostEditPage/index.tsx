@@ -1,5 +1,5 @@
 const PostEditPage = () => {
-  return <div></div>;
+  return <div>PostEditPage</div>;
 };
 
 export default PostEditPage;

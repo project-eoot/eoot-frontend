@@ -1,5 +1,5 @@
 const LocationPage = () => {
-  return <div></div>;
+  return <div>LocationPage</div>;
 };
 
 export default LocationPage;
