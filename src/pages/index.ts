@@ -10,4 +10,4 @@ export { default as LoginPage } from "@pages/User/LoginPage";
 export { default as ProfilePage } from "@pages/User/ProfilePage";
 export { default as ProfileEditPage } from "@pages/User/ProfileEditPage";
 export { default as NotificationPage } from "@pages/User/NotificationPage";
-export { default as RegistPage } from "@pages/User/RegistPage";
+export { default as SignupPage } from "@/pages/User/SignupPage";

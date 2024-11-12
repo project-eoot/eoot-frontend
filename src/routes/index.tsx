@@ -13,7 +13,7 @@ import {
   PostWritePage,
   ProfileEditPage,
   ProfilePage,
-  RegistPage,
+  SignupPage,
 } from "@/pages";
 
 import AuthRoute from "./AuthRoute";
@@ -112,9 +112,9 @@ export const router = createBrowserRouter([
         element: <LoginPage />,
       },
       {
-        path: "/regist",
+        path: "/signup",
         // TODO: loader: ~,
-        element: <RegistPage />,
+        element: <SignupPage />,
       },
     ],
   },
