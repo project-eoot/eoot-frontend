@@ -11,3 +11,4 @@ export { default as ProfilePage } from "@pages/User/ProfilePage";
 export { default as ProfileEditPage } from "@pages/User/ProfileEditPage";
 export { default as NotificationPage } from "@pages/User/NotificationPage";
 export { default as SignupPage } from "@/pages/User/SignupPage";
+export { default as ErrorPage } from "@/pages/Common/ErrorPage"

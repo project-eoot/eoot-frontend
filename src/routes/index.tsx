@@ -3,6 +3,7 @@ import { Navigate, createBrowserRouter, useRouteError } from "react-router-dom";
 import {
   ChattingListPage,
   ChattingRoomPage,
+  ErrorPage,
   LocationPage,
   LoginPage,
   NotificationPage,
@@ -116,6 +117,10 @@ export const router = createBrowserRouter([
         // TODO: loader: ~,
         element: <SignupPage />,
       },
+      {
+        path: "*",
+        element: <ErrorPage />
+      }
     ],
   },
 ]);
