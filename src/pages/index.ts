@@ -1,0 +1,14 @@
+export { default as ChattingListPage } from "@pages/Chat/ChattingListPage";
+export { default as ChattingRoomPage } from "@pages/Chat/ChattingRoomPage";
+export { default as PostDetailPage } from "@pages/Post/PostDetailPage";
+export { default as PostEditPage } from "@pages/Post/PostEditPage";
+export { default as PostListPage } from "@pages/Post/PostListPage";
+export { default as PostSearchPage } from "@pages/Post/PostSearchPage";
+export { default as PostWritePage } from "@pages/Post/PostWritePage";
+export { default as LocationPage } from "@pages/User/LocationPage";
+export { default as LoginPage } from "@pages/User/LoginPage";
+export { default as ProfilePage } from "@pages/User/ProfilePage";
+export { default as ProfileEditPage } from "@pages/User/ProfileEditPage";
+export { default as NotificationPage } from "@pages/User/NotificationPage";
+export { default as SignupPage } from "@/pages/User/SignupPage";
+export { default as ErrorPage } from "@/pages/Common/ErrorPage"

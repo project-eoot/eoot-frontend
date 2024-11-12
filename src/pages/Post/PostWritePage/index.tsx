@@ -1,5 +1,5 @@
 const PostWritePage = () => {
-  return <div></div>;
+  return <div>PostWritePage</div>;
 };
 
 export default PostWritePage;
