@@ -19,8 +19,31 @@ import {
 
 import AuthRoute from "./AuthRoute";
 import DefaultLayout from "./Layouts/DefaultLayout";
+import PlainLayout from "./Layouts/PlainLayout";
 
 export const router = createBrowserRouter([
+
+  {
+    path: "/post/write",
+    element: <PlainLayout />,
+    children: [
+      { path: "", element: <PostWritePage /> },
+    ],
+  },
+  {
+    path: "/login",
+    element: <PlainLayout />,
+    children: [
+      { path: "", element: <LoginPage /> },
+    ],
+  },
+  {
+    path: "/signup",
+    element: <PlainLayout />,
+    children: [
+      { path: "", element: <SignupPage /> },
+    ],
+  },
   {
     path: "/",
     element: <DefaultLayout />,
@@ -48,14 +71,6 @@ export const router = createBrowserRouter([
           {
             path: ":postId",
             element: <PostDetailPage />,
-          },
-          {
-            path: "write",
-            element: (
-              <AuthRoute>
-                <PostWritePage />
-              </AuthRoute>
-            ),
           },
           {
             path: "edit",
@@ -106,16 +121,6 @@ export const router = createBrowserRouter([
       {
         path: "/notifications",
         element: <NotificationPage />,
-      },
-      {
-        path: "/login",
-        // TODO: loader: ~,
-        element: <LoginPage />,
-      },
-      {
-        path: "/signup",
-        // TODO: loader: ~,
-        element: <SignupPage />,
       },
       {
         path: "*",
