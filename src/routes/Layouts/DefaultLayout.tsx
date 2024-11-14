@@ -5,9 +5,9 @@ import Navigator from "@/components/Navigator/Navigator";
 
 const DefaultLayout = () => {
   return (
-    <div>
+    <div className="h-screen flex flex-col">
       <Header />
-      <div>
+      <div className="h-full overflow-auto">
         <Outlet />
       </div>
       <Navigator />
