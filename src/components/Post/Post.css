@@ -1,0 +1,9 @@
+.post-list {
+    height: calc(100vh - 100px);   
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.post-list::-webkit-scrollbar {
+    display: none;
+}   
